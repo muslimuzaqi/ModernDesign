@@ -34,9 +34,9 @@
                                    Foreground="White"
                                    FontSize="28"
                                    />
-                        <Image Width="250"
+                        <Image Width="341"
                                Height="171"
-                               Source="/Images/main.png" HorizontalAlignment="Right"
+                               Source="/Images/main.png"
                                />
                         <TextBlock Text="Get started today!"
                                    Foreground="White"
@@ -56,6 +56,41 @@
                     </LinearGradientBrush>
                 </Border.Background>
             </Border>
+        </StackPanel>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Most Watched"
+                Foreground="White"
+                FontSize="20"
+                HorizontalAlignment="Left"
+                Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" 
+                        Margin="0,0,0,10">
+                <Border Width="150"
+                        Height="150"
+                        Background="#844eff"
+                        CornerRadius="10"
+                        Margin="0"/>
+                <Border Width="150"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10"/> 
+                <Border Width="150"
+                        Height="150"
+                        Background="#4eff91"
+                        CornerRadius="10"/>  
+                <Border Width="150"
+                        Height="150"
+                        Background="#ecff4e"
+                        CornerRadius="10"/>
+            </StackPanel>
+            
         </StackPanel>
     </StackPanel>
 </UserControl>
